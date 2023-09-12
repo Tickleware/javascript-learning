@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9h exercise</title>
+</head>
+<body>
+    <input  placeholder="Type Something" class="js-text-input" onkeyup="HandleTextKeyup(event)">
+    <p class="js-text"></p>
+
+
+
+
+
+
+
+    <script>
+        function HandleTextKeyup(event) {
+            if (event.key === 'Enter') {
+                someText()
+            }
+        } 
+
+        function someText() {
+            const inputElement = document.querySelector('.js-text-input')
+            document.querySelector('.js-text')
+            .innerHTML = `${inputElement.value}`
+
+        }
+    </script>
+</body>
+</html>
